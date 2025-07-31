@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --light-bg: #f0f0f0;
+  --light-text: #222;
+  --card-bg: #ffffff;
+  --accent: #0077cc;
+  --danger: #ff4b4b;
+
+  --dark-bg: #1c1c1c;
+  --dark-text: #f0f0f0;
+  --dark-card: #2a2a2a;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: var(--light-bg);
+  color: var(--light-text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+body.dark-theme #apodDisplay,
+body.dark-theme #favoritesList {
+  background-color: var(--dark-card);
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+input[type="date"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.theme-toggle {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#theme-button {
+  background-color: #817263;
+  color: #222;
+  border: none;
+  border-radius: 5px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+#theme-button:hover {
+  background-color: #e4a978;
+}
+
+#apodDisplay,
+#favoritesList {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+#apod-display img,
+#apodDisplay img {
+  max-width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid var(--accent);
+  display: block;
+  margin: 0 auto;
+}
+
+.favorite-item {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  width: 150px;
+}
+
+.favorite-item img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid var(--accent);
+  cursor: pointer;
+  display: block;
+}
+
+.favorite-item p {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.remove-fav-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background-color: rgba(255, 0, 0, 0.8);
+  border: none;
+  color: white;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.remove-fav-btn:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+@media (max-width: 576px) {
+  #favoritesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .favorite-item {
+    width: 45%;
+  }
+
+  .favorite-item img {
+    width: 100%;
+  }
+}

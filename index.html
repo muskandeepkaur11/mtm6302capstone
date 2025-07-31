@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NASA APOD Viewer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>NASA Astronomy Picture of the Day</h1>
+      <div class="theme-toggle">
+        <button id="theme-button" aria-label="Toggle dark/light theme">Switch Theme</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <form id="apodForm" aria-label="Select a date for Astronomy Picture of the Day">
+        <label for="dateInput">Select a Date:</label>
+        <input
+          type="date"
+          id="dateInput"
+          max=""
+          required
+          aria-required="true"
+        />
+        <button type="submit">Get APOD</button>
+      </form>
+    </section>
+
+    <section id="apodDisplay" aria-live="polite" class="display-section">
+    </section>
+
+    <section id="favorites" class="favorites-section">
+      <h2>Your Favorite Pictures</h2>
+      <div id="favoritesList">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Powered by NASA's APOD API • Made for MTM6302 Capstone Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
