@@ -3,7 +3,7 @@
 **Name:** Muskan Deep Kaur 
 **Student Number:** 90541152565 
 **Chosen Project:** Astronomy Picture of the Day Search
-# 🌌 NASA APOD Viewer
+#  NASA APOD Viewer
 
 ## 🧭 Overview
 
@@ -11,13 +11,13 @@ This project is a responsive web application that allows users to explore NASA�
 
 ## ✅ Features
 
-- 📅 Select a date to view the APOD image and description
-- 💡 Toggle between light and dark themes
-- ❤️ Add or remove favorite images (stored in `localStorage`)
-- 💾 Favorites persist across browser sessions
-- 🧠 All data fetched using the **Fetch API**
-- 🔄 No page refreshes required
-- 📱 Fully responsive layout for mobile, tablet, and desktop
+-  Select a date to view the APOD image and description
+-  Toggle between light and dark themes
+-  Add or remove favorite images (stored in `localStorage`)
+-  Favorites persist across browser sessions
+-  All data fetched using the **Fetch API**
+-  No page refreshes required
+-  Fully responsive layout for mobile, tablet, and desktop
 
 ## 🛠 Technologies Used
 
