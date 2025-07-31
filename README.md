@@ -5,11 +5,11 @@
 **Chosen Project:** Astronomy Picture of the Day Search
 #  NASA APOD Viewer
 
-## 🧭 Overview
+##  Overview
 
 This project is a responsive web application that allows users to explore NASA’s Astronomy Picture of the Day (APOD). Users can select a date, view the corresponding image or media from NASA's API, and save their favorite pictures locally.
 
-## ✅ Features
+##  Features
 
 -  Select a date to view the APOD image and description
 -  Toggle between light and dark themes
@@ -19,7 +19,7 @@ This project is a responsive web application that allows users to explore NASA�
 -  No page refreshes required
 -  Fully responsive layout for mobile, tablet, and desktop
 
-## 🛠 Technologies Used
+##  Technologies Used
 
 - HTML5
 - CSS3 (custom + responsive design)
